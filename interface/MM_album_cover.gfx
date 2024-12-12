@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_MM_album_cover
+		texturefile = "gfx/MM_album_cover.dds"
+		noOfFrames = 2
+	}
+}

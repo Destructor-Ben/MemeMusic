@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build (Release)",
+      "type": "shell",
+      "command": "../HOI4-Mod-Helper.cmd --dev false"
+    },
+    {
+      "label": "Build (Debug)",
+      "type": "shell",
+      "command": "../HOI4-Mod-Helper.cmd"
+    },
+    {
+      "label": "Build (Debug) and Watch Files",
+      "type": "shell",
+      "command": "../HOI4-Mod-Helper.cmd -w",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
