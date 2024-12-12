@@ -1,7 +1,29 @@
 ﻿l_english:
   MM_station_TITLE: "Meme Music"
 
-  MM_napoleon: "Amour Plastique"
-  MM_erika: "Erika"
-  MM_china: "Red Sun in the Sky"
-  MM_soviets: "Anthem of the USSR"
+  # Anthems
+  MM_anthem_ussr: "Anthem of the USSR"
+  MM_anthem_ccp: "Red Sun in the Sky"
+  MM_anthem_usa: "Star Spangled Banner"
+  MM_anthem_uk: "Rule, Britannia!"
+  MM_anthem_germany: "Erika"
+
+  # Non english music
+  MM_inter_hava_nagila: "Hava Nagila"
+  MM_inter_moskau: "Moskau - Dschinghis Khan"
+  MM_inter_polish_cow: "Gdzie jest biały węgorz (Zejście) - Cypis"
+  MM_inter_sigma_boy: "Sigma Boy - Betsy & Maria Yankovskaya"
+  MM_inter_caramelldansen: "Caramelldansen - Caramella Girls"
+  MM_inter_amour_plastique: "Amour Plastique (Slowed + Reverb) - VIDEOCLUB"
+  MM_inter_iyfml: "If You Feel My Love (Chaow Mix) - Blaxy Girls"
+  MM_inter_srwp: "Sunshine, Rainbow, White Pony - Wowkie Da"
+  MM_inter_ndns: "Nam Dang Nam Som - JV.JARVIS"
+  MM_inter_gangnam_style: "Gangnam Style - PSY"
+  MM_inter_mundian_to_bach_ke: "Mundian to Bach Ke - Panjabi MC"
+  MM_inter_tunak_tunak_tun: "Tunak Tunak Tun - Daler Mehndi"
+
+  # English music
+  MM_eng_symphony: "Symphony - Clean Bandit"
+  MM_eng_thick_of_it: "Thick Of It - KSI"
+  MM_eng_wdstf: "We Didn't Start the Fire - Billy Joe"
+  MM_eng_rickroll: "Never Gonna Give You Up - Rick Astley"
