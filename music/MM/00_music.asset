@@ -1,0 +1,30 @@
+# Anthems
+music = {
+    name = "MM_anthem_ussr"
+    file = "001_00_ussr.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_anthem_ccp"
+    file = "001_01_ccp.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_anthem_usa"
+    file = "001_02_usa.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_anthem_uk"
+    file = "001_03_uk.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_anthem_germany"
+    file = "001_04_germany.ogg"
+    volume = 1
+}

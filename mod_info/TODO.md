@@ -7,20 +7,27 @@
 - Adjust volumes
 
 - All meme music
-  - Amour plastique
-  - Erika
-  - Red sun in the sky
-  - USSR anthem
-
-  - Polish cow song
-  - Ching cheng hanji
-  - Yanguang caihong xiaobai ma
-  - nam dang song
-  - gangnam style
-  - Mundian to bach ke
-  - Tunak tunak
-  - Never gonna give you up - play when us saves the uk
-  - symphony - play when losing
-  - sigma sigma boi
-  - caramelldansen
-  - thick of it
+  - National anthems
+    - [X] USSR Anthem
+    - [X] Red sun in the sky
+    - [X] Star Spangled Banner
+    - [X] Rule Britannia
+    - [X] Erika
+  - Non English Meme Music
+    - [X] Hava Nagila
+    - [X] Moskau
+    - [X] Polish cow song
+    - [X] Sigma sigma boi
+    - [X] Caramelldansen
+    - [X] Amour plastique
+    - [X] Ching cheng hanji
+    - [X] Nigga nigga nay nay - NEEDS TRIMMING
+    - [X] Nam dang nam som
+    - [X] Gangnam style - NEEDS TRIMMING
+    - [X] Mundian to bach ke
+    - [X] tunak tunak
+  - English Meme Music
+    - [X] Symphony
+    - [X] Thick of it
+    - [X] We didn't start the fire
+    - [X] never gonna give you up

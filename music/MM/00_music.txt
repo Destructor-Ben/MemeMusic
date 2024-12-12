@@ -1,0 +1,37 @@
+music_station = "MM_station"
+
+# Anthems
+music = {
+    song = "MM_anthem_ussr"
+    chance = {
+        base = 1
+    }
+}
+
+music = {
+    song = "MM_anthem_ccp"
+    chance = {
+        base = 1
+    }
+}
+
+music = {
+    song = "MM_anthem_usa"
+    chance = {
+        base = 1
+    }
+}
+
+music = {
+    song = "MM_anthem_uk"
+    chance = {
+        base = 1
+    }
+}
+
+music = {
+    song = "MM_anthem_germany"
+    chance = {
+        base = 1
+    }
+}
