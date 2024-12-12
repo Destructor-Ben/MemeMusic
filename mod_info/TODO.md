@@ -1,7 +1,8 @@
 # To Do List
 
-- Make mod icon
-- Fill out mod info
+- Convert icon to a png and use the automatic DDS conversion
+
+- Make mod icon and album icon
 - Make sure the mod is working properly
 - Add different chances to the songs and make them play at appropriate times
 - Adjust volumes
