@@ -2,156 +2,38 @@ Meme Music is a mod that adds a bunch of meme music to the game.
 
 [hr][/hr]
 [h1]Music[/h1]
+[h2]Patriotic Meme Music[/h2]
 [list]
-  [*]TODO
+  [*]USSR Anthem
+  [*]Red Sun in the Sky
+  [*]Star Spangled Banner
+  [*]Rule Britannia
+  [*]Erika
+[/list]
+
+[h2]English Meme Music[/h2]
+[list]
+  [*]Symphony - Clean Bandit
+  [*]Thick Of It - KSI
+  [*]We Didn't Start the Fire - Billy Joel
+  [*]Never Gonna Give You Up - Rick Astley
+[/list]
+
+[h2]Non-English Meme Music[/h2]
+[list]
+  [*]Hava Nagila - TODO
+  [*]Moskau - TODO
+  [*]INSERT POLISH COW SONG
+  [*]INSERT SIGMA SIGMA BOY
+  [*]Caramelldansen - The Caramella Girls
+  [*]Amour Plastique (slow + reverb) - TODO
+  [*]INSERT CHING CHENG HANJI
+  [*]INSERT SHUNSHINE RAINBOW WHITE PONY
+  [*]INSERT NAM DANG NAM SOM
+  [*]Gangnam Style - TODO
+  [*]Mundian to Bach Ke - TODO
+  [*]Tunak Tunak Tun - Daler Medhi
 [/list]
 
 [h1]Links[/h1]
 [url=https://github.com/Destructor-Ben/MemeMusic]Github Repository[/url]
-
-# TODO: simplify
-music = {
-    song = "MM_napoleon"
-    chance = {
-        base = 0
-
-        # Only make it play during war if someone is losing
-        modifier = {
-            add = 1
-            has_war = yes
-
-            OR = {
-                surrender_progress > 10
-
-                any_country = {
-                    AND = {
-                        has_war_with = ROOT
-                        surrender_progress > 10
-                    }
-                }
-            }
-        }
-
-        # Boost chance if we are France or at war with them
-        modifier = {
-            factor = 2
-            
-            OR = {
-                TAG = FRA
-                has_war_with = FRA
-            }
-        }
-
-        # Boost chance if we are losing
-        modifier = {
-            set_temp_variable = { t = surrender_progress }
-            divide_temp_variable = { t = 10 }
-            round_temp_variable = t
-            factor = t
-        }
-
-        # Boost chance if the enemy is losing
-        modifier = {
-            any_country = {
-                has_war_with = ROOT
-                set_temp_variable = { t = surrender_progress }
-                divide_temp_variable = { t = 10 }
-                round_temp_variable = t
-                factor = t
-            }
-        }
-    }
-}
-
-music = {
-    song = "MM_erika"
-    chance = {
-        base = 0
-
-        # Enable if we are Germany or at war
-        modifier = {
-            add = 1
-
-            OR = {
-                TAG = GER
-                has_war = yes
-            }
-        }
-
-        # Boost chance if we are Germany and at war or at war with them
-        modifier = {
-            factor = 3
-            
-            OR = {
-                AND = {
-                    TAG = GER
-                    has_war = yes
-                }
-
-                has_war_with = GER
-            }
-        }
-    }
-}
-
-music = {
-    song = "MM_china"
-    chance = {
-        base = 0
-
-        # Enable if we are PRC or at war
-        modifier = {
-            add = 1
-
-            OR = {
-                TAG = PRC
-                has_war = yes
-            }
-        }
-
-        # Boost chance if we are PRC and at war or at war with them
-        modifier = {
-            factor = 3
-            
-            OR = {
-                AND = {
-                    TAG = PRC
-                    has_war = yes
-                }
-
-                has_war_with = PRC
-            }
-        }
-    }
-}
-
-music = {
-    song = "MM_soviets"
-    chance = {
-        base = 0
-
-        # Enable if we are USSR or at war
-        modifier = {
-            add = 1
-
-            OR = {
-                TAG = SOV
-                has_war = yes
-            }
-        }
-
-        # Boost chance if we are USSR and at war or at war with them
-        modifier = {
-            factor = 3
-            
-            OR = {
-                AND = {
-                    TAG = SOV
-                    has_war = yes
-                }
-
-                has_war_with = SOV
-            }
-        }
-    }
-}

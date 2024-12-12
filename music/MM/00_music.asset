@@ -1,30 +1,128 @@
 # Anthems
 music = {
     name = "MM_anthem_ussr"
-    file = "001_00_ussr.ogg"
+    file = "01_00_ussr.ogg"
     volume = 1
 }
 
 music = {
     name = "MM_anthem_ccp"
-    file = "001_01_ccp.ogg"
+    file = "01_01_ccp.ogg"
     volume = 1
 }
 
 music = {
     name = "MM_anthem_usa"
-    file = "001_02_usa.ogg"
+    file = "01_02_usa.ogg"
     volume = 1
 }
 
 music = {
     name = "MM_anthem_uk"
-    file = "001_03_uk.ogg"
+    file = "01_03_uk.ogg"
     volume = 1
 }
 
 music = {
     name = "MM_anthem_germany"
-    file = "001_04_germany.ogg"
+    file = "01_04_germany.ogg"
+    volume = 1
+}
+
+# Non english music
+music = {
+    name = "MM_inter_hava_nagila"
+    file = "02_00_hava_nagila.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_moskau"
+    file = "02_01_moskau.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_polish_cow"
+    file = "02_02_polish_cow.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_sigma_boy"
+    file = "02_03_sigma_boy.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_caramelldansen"
+    file = "02_04_caramelldansen.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_amour_plastique"
+    file = "02_05_amour_plastique.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_iyfml"
+    file = "02_06_iyfml.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_srwp"
+    file = "02_07_srwp.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_ndns"
+    file = "02_08_ndns.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_gangnam_style"
+    file = "02_09_gangnam_style.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_mundian_to_bach_ke"
+    file = "02_10_mundian_to_bach_ke.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_inter_tunak_tunak_tun"
+    file = "02_11_tunak_tunak_tun.ogg"
+    volume = 1
+}
+
+# English music
+music = {
+    name = "MM_eng_symphony"
+    file = "03_00_symphony.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_eng_thick_of_it"
+    file = "03_01_thick_of_it.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_eng_wdstf"
+    file = "03_02_wdstf.ogg"
+    volume = 1
+}
+
+music = {
+    name = "MM_eng_rickroll"
+    file = "03_03_rickroll.ogg"
     volume = 1
 }
