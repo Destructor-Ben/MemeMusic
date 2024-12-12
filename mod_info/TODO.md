@@ -1,18 +1,10 @@
 # To Do List
 
-- Convert icon to a png and use the automatic DDS conversion
+- Convert album icon to a png and use the automatic DDS conversion
 
 - Make mod icon and album icon
-- Make sure the mod is working properly
 - Add different chances to the songs and make them play at appropriate times
 - Adjust volumes
-- Trim nig nig nay nay
-- Trim gangnam style
-
-[20:47:18][no_game_date][pdx_audiomusic_sdl.cpp:76]: For best performance and quality music files should be in 44.1kHz (MM_inter_ndns)
-[20:47:19][no_game_date][pdx_audiomusic_sdl.cpp:76]: For best performance and quality music files should be in 44.1kHz (MM_inter_hava_nagila)
-[20:47:19][no_game_date][pdx_audiomusic_sdl.cpp:76]: For best performance and quality music files should be in 44.1kHz (MM_inter_gangnam_style)
-
 
 # TODO: simplify
 music = {
