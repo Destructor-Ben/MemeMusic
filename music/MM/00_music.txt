@@ -1,151 +1,847 @@
 music_station = "MM_station"
 
-# Anthems
+# 2 types of songs
+# War songs - played when at war with a certain country
+# Losing songs - Played when someone is losing
+
+# War song
+
+# chance = {
+#     base = 0
+
+#     # Enable if we are the target country or at war
+#     modifier = {
+#         add = 1
+
+#         OR = {
+#             TAG = INSERT_TAG
+#             has_war = yes
+#         }
+#     }
+
+#     # Boost chance if we are the target country and at war or at war with them
+#     modifier = {
+#         factor = 3
+        
+#         OR = {
+#             AND = {
+#                 TAG = INSERT_TAG
+#                 has_war = yes
+#             }
+
+#             has_war_with = INSERT_TAG
+#         }
+#     }
+# }
+
+# Losing song
+
+# chance = {
+#     base = 0
+
+#     # Only make it play during war if someone is losing
+#     modifier = {
+#         add = 1
+#         has_war = yes
+
+#         OR = {
+#             surrender_progress > 10
+
+#             any_country = {
+#                 AND = {
+#                     has_war_with = ROOT
+#                     surrender_progress > 10
+#                 }
+#             }
+#         }
+#     }
+
+#     # Boost chance if we are the target country or at war with them
+#     modifier = {
+#         factor = 2
+        
+#         OR = {
+#             TAG = INSERT_TAG
+#             has_war_with = INSERT_TAG
+#         }
+#     }
+
+#     # Boost chance if we are losing
+#     modifier = {
+#         set_temp_variable = { t = surrender_progress }
+#         divide_temp_variable = { t = 10 }
+#         round_temp_variable = t
+#         factor = t
+#     }
+
+#     # Boost chance if the enemy is losing
+#     modifier = {
+#         any_country = {
+#             has_war_with = ROOT
+#             set_temp_variable = { t = surrender_progress }
+#             divide_temp_variable = { t = 10 }
+#             round_temp_variable = t
+#             factor = t
+#         }
+#     }
+# }
+
+# Anthems - All war songs
 music = {
     song = "MM_anthem_ussr"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = SOV
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = SOV
+                    has_war = yes
+                }
+    
+                has_war_with = SOV
+            }
+        }
     }
 }
 
 music = {
     song = "MM_anthem_ccp"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = PRC
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = PRC
+                    has_war = yes
+                }
+    
+                has_war_with = PRC
+            }
+        }
     }
 }
 
 music = {
     song = "MM_anthem_usa"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = USA
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = USA
+                    has_war = yes
+                }
+    
+                has_war_with = USA
+            }
+        }
     }
 }
 
 music = {
     song = "MM_anthem_uk"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = ENG
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = ENG
+                    has_war = yes
+                }
+    
+                has_war_with = ENG
+            }
+        }
     }
 }
 
 music = {
     song = "MM_anthem_germany"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = GER
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = GER
+                    has_war = yes
+                }
+    
+                has_war_with = GER
+            }
+        }
     }
 }
 
-# Non english music
+# Non english music - Unless specified, is a war song
 music = {
     song = "MM_inter_hava_nagila"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = ISR
+                TAG = GER
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = ISR
+                    has_war = yes
+                }
+
+                AND = {
+                    TAG = GER
+                    has_war = yes
+                }
+    
+                has_war_with = ISR
+                has_war_with = GER
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_moskau"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = GER
+                TAG = SOV
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = SOV
+                    has_war = yes
+                }
+
+                AND = {
+                    TAG = GER
+                    has_war = yes
+                }
+    
+                has_war_with = SOV
+                has_war_with = GER
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_polish_cow"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = POL
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = POL
+                    has_war = yes
+                }
+    
+                has_war_with = POL
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_sigma_boy"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = SOV
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = SOV
+                    has_war = yes
+                }
+    
+                has_war_with = SOV
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_caramelldansen"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = SWE
+                TAG = JAP
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = SWE
+                    has_war = yes
+                }
+                
+                AND = {
+                    TAG = JAP
+                    has_war = yes
+                }
+    
+                has_war_with = SWE
+                has_war_with = JAP
+            }
+        }
     }
 }
 
+# Losing song
 music = {
     song = "MM_inter_amour_plastique"
     chance = {
-        base = 1
+        base = 0
+    
+        # Only make it play during war if someone is losing
+        modifier = {
+            add = 1
+            has_war = yes
+    
+            OR = {
+                surrender_progress > 10
+    
+                any_country = {
+                    AND = {
+                        has_war_with = ROOT
+                        surrender_progress > 10
+                    }
+                }
+            }
+        }
+    
+        # Boost chance if we are the target country or at war with them
+        modifier = {
+            factor = 2
+            
+            OR = {
+                TAG = FRA
+                has_war_with = FRA
+            }
+        }
+    
+        # Boost chance if we are losing
+        modifier = {
+            set_temp_variable = { t = surrender_progress }
+            divide_temp_variable = { t = 10 }
+            round_temp_variable = t
+            factor = t
+        }
+    
+        # Boost chance if the enemy is losing
+        modifier = {
+            any_country = {
+                has_war_with = ROOT
+                set_temp_variable = { t = surrender_progress }
+                divide_temp_variable = { t = 10 }
+                round_temp_variable = t
+                factor = t
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_iyfml"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = CHI
+                TAG = PRC
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = PRC
+                    has_war = yes
+                }
+                
+                AND = {
+                    TAG = CHI
+                    has_war = yes
+                }
+    
+                has_war_with = PRC
+                has_war_with = CHI
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_srwp"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = CHI
+                TAG = PRC
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = PRC
+                    has_war = yes
+                }
+                
+                AND = {
+                    TAG = CHI
+                    has_war = yes
+                }
+    
+                has_war_with = PRC
+                has_war_with = CHI
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_ndns"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = SIA
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = SIA
+                    has_war = yes
+                }
+    
+                has_war_with = SIA
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_gangnam_style"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = KOR
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = KOR
+                    has_war = yes
+                }
+    
+                has_war_with = KOR
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_mundian_to_bach_ke"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = RAJ
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = RAJ
+                    has_war = yes
+                }
+    
+                has_war_with = RAJ
+            }
+        }
     }
 }
 
 music = {
     song = "MM_inter_tunak_tunak_tun"
     chance = {
-        base = 1
+        base = 0
+    
+        # Enable if we are the target country or at war
+        modifier = {
+            add = 1
+    
+            OR = {
+                TAG = RAJ
+                has_war = yes
+            }
+        }
+    
+        # Boost chance if we are the target country and at war or at war with them
+        modifier = {
+            factor = 3
+            
+            OR = {
+                AND = {
+                    TAG = RAJ
+                    has_war = yes
+                }
+    
+                has_war_with = RAJ
+            }
+        }
     }
 }
 
-# English music
+# English music - All losing songs
 music = {
     song = "MM_eng_symphony"
     chance = {
-        base = 1
+        base = 0
+    
+        # Only make it play during war if someone is losing
+        modifier = {
+            add = 1
+            has_war = yes
+    
+            OR = {
+                surrender_progress > 10
+    
+                any_country = {
+                    AND = {
+                        has_war_with = ROOT
+                        surrender_progress > 10
+                    }
+                }
+            }
+        }
+    
+        # Boost chance if we are losing
+        modifier = {
+            set_temp_variable = { t = surrender_progress }
+            divide_temp_variable = { t = 10 }
+            round_temp_variable = t
+            factor = t
+        }
+    
+        # Boost chance if the enemy is losing
+        modifier = {
+            any_country = {
+                has_war_with = ROOT
+                set_temp_variable = { t = surrender_progress }
+                divide_temp_variable = { t = 10 }
+                round_temp_variable = t
+                factor = t
+            }
+        }
     }
 }
 
 music = {
     song = "MM_eng_thick_of_it"
     chance = {
-        base = 1
+        base = 0
+    
+        # Only make it play during war if someone is losing
+        modifier = {
+            add = 1
+            has_war = yes
+    
+            OR = {
+                surrender_progress > 10
+    
+                any_country = {
+                    AND = {
+                        has_war_with = ROOT
+                        surrender_progress > 10
+                    }
+                }
+            }
+        }
+    
+        # Boost chance if we are losing
+        modifier = {
+            set_temp_variable = { t = surrender_progress }
+            divide_temp_variable = { t = 10 }
+            round_temp_variable = t
+            factor = t
+        }
+    
+        # Boost chance if the enemy is losing
+        modifier = {
+            any_country = {
+                has_war_with = ROOT
+                set_temp_variable = { t = surrender_progress }
+                divide_temp_variable = { t = 10 }
+                round_temp_variable = t
+                factor = t
+            }
+        }
     }
 }
 
 music = {
     song = "MM_eng_wdstf"
     chance = {
-        base = 1
+        base = 0
+    
+        # Only make it play during war if someone is losing
+        modifier = {
+            add = 1
+            has_war = yes
+    
+            OR = {
+                surrender_progress > 10
+    
+                any_country = {
+                    AND = {
+                        has_war_with = ROOT
+                        surrender_progress > 10
+                    }
+                }
+            }
+        }
+    
+        # Boost chance if we are losing
+        modifier = {
+            set_temp_variable = { t = surrender_progress }
+            divide_temp_variable = { t = 10 }
+            round_temp_variable = t
+            factor = t
+        }
+    
+        # Boost chance if the enemy is losing
+        modifier = {
+            any_country = {
+                has_war_with = ROOT
+                set_temp_variable = { t = surrender_progress }
+                divide_temp_variable = { t = 10 }
+                round_temp_variable = t
+                factor = t
+            }
+        }
     }
 }
 
 music = {
     song = "MM_eng_rickroll"
     chance = {
-        base = 1
+        base = 0
+    
+        # Only make it play during war if someone is losing
+        modifier = {
+            add = 1
+            has_war = yes
+    
+            OR = {
+                surrender_progress > 10
+    
+                any_country = {
+                    AND = {
+                        has_war_with = ROOT
+                        surrender_progress > 10
+                    }
+                }
+            }
+        }
+    
+        # Boost chance if we are losing
+        modifier = {
+            set_temp_variable = { t = surrender_progress }
+            divide_temp_variable = { t = 10 }
+            round_temp_variable = t
+            factor = t
+        }
+    
+        # Boost chance if the enemy is losing
+        modifier = {
+            any_country = {
+                has_war_with = ROOT
+                set_temp_variable = { t = surrender_progress }
+                divide_temp_variable = { t = 10 }
+                round_temp_variable = t
+                factor = t
+            }
+        }
     }
 }
