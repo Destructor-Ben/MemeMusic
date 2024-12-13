@@ -73,17 +73,6 @@ music_station = "MM_station"
 #         round_temp_variable = t
 #         factor = t
 #     }
-
-#     # Boost chance if the enemy is losing
-#     modifier = {
-#         any_country = {
-#             has_war_with = ROOT
-#             set_temp_variable = { t = surrender_progress }
-#             divide_temp_variable = { t = 10 }
-#             round_temp_variable = t
-#             factor = t
-#         }
-#     }
 # }
 
 # Anthems - All war songs
@@ -459,17 +448,6 @@ music = {
             round_temp_variable = t
             factor = t
         }
-    
-        # Boost chance if the enemy is losing
-        modifier = {
-            any_country = {
-                has_war_with = ROOT
-                set_temp_variable = { t = surrender_progress }
-                divide_temp_variable = { t = 10 }
-                round_temp_variable = t
-                factor = t
-            }
-        }
     }
 }
 
@@ -703,17 +681,6 @@ music = {
             round_temp_variable = t
             factor = t
         }
-    
-        # Boost chance if the enemy is losing
-        modifier = {
-            any_country = {
-                has_war_with = ROOT
-                set_temp_variable = { t = surrender_progress }
-                divide_temp_variable = { t = 10 }
-                round_temp_variable = t
-                factor = t
-            }
-        }
     }
 }
 
@@ -745,17 +712,6 @@ music = {
             divide_temp_variable = { t = 10 }
             round_temp_variable = t
             factor = t
-        }
-    
-        # Boost chance if the enemy is losing
-        modifier = {
-            any_country = {
-                has_war_with = ROOT
-                set_temp_variable = { t = surrender_progress }
-                divide_temp_variable = { t = 10 }
-                round_temp_variable = t
-                factor = t
-            }
         }
     }
 }
@@ -789,17 +745,6 @@ music = {
             round_temp_variable = t
             factor = t
         }
-    
-        # Boost chance if the enemy is losing
-        modifier = {
-            any_country = {
-                has_war_with = ROOT
-                set_temp_variable = { t = surrender_progress }
-                divide_temp_variable = { t = 10 }
-                round_temp_variable = t
-                factor = t
-            }
-        }
     }
 }
 
@@ -831,17 +776,6 @@ music = {
             divide_temp_variable = { t = 10 }
             round_temp_variable = t
             factor = t
-        }
-    
-        # Boost chance if the enemy is losing
-        modifier = {
-            any_country = {
-                has_war_with = ROOT
-                set_temp_variable = { t = surrender_progress }
-                divide_temp_variable = { t = 10 }
-                round_temp_variable = t
-                factor = t
-            }
         }
     }
 }
